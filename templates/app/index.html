@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<a href="{% url 'list' %}" class="btn btn-info btn-lg" tabindex="-1" role="button" aria-disabled="true">クエスト一覧へ</a>
 <form action="" method="POST" enctype="multipart/form-data">
     {% csrf_token %}
     <div>
